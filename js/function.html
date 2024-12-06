@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function grret(){
+            return "welcome to changepond technology <br>";
+        }
+        let data = grret();
+        document.write(data);
+
+        function add(num,num1){
+            return num+num1
+        }
+        document.write(add(10,5),"<br>");
+
+        // anonymous
+        let mul = function(n1,n2){
+            return n1*n2 + "<br>";
+
+        }
+        document.write(mul(8,3));
+
+        // arrow
+        let div = (n1,n2) =>{
+            return n1/n2 + "<br>";
+        }
+        document.write(div(8,2));
+
+        let div1 = (n1,n2) => n1/n2 + "<br>";
+        
+        document.write(div1(8,2));
+
+        let fullname = (fname,lname,mname="") =>{
+            return fname+mname+lname+"<br>";
+        }
+        document.write(fullname('tarun',' kumar',' .s'))
+
+        let stdlist =(...std) =>{
+            return std;
+        }
+        document.write('tarun',' santo',' jai',' niti')
+    </script>
+
+</body>
+</html>

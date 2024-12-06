@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let msg = "welcome you all in changepond you all are future of changepond";
+        document.write(`${msg} <br>`);
+        document.write(`${msg.length} <br>`);
+
+        document.write(`${msg.indexOf("all")} <br>`);
+        document.write(`${msg.indexOf("all",16)} <br>`);
+
+        document.write(`${msg.lastIndexOf("you")} <br>`);
+        document.write(`${msg.lastIndexOf("you",28)} <br>`);
+
+        document.write(`${msg.search("changepond")} <br>`);
+
+        document.write(`${msg.slice(15)}<br>`);
+        document.write(`${msg.slice(15,32)}<br>`);
+        document.write(`${msg.slice(-20)}<br>`);
+        document.write(`${msg.slice(-20,-5)}<br>`);
+
+        document.write(`${msg.substring(10)}<br>`);
+        document.write(`${msg.substring(10,25)}<br>`);
+
+        document.write(`${msg.substr(5,10)}<br>`);
+
+        document.write(`${msg.charAt(0)} <br>`);
+
+        document.write(`${msg.replace('changepond','india')}<br>`);
+        document.write(`${msg.replace('/Changepond/i','india')}<br>`);
+        document.write(`${msg.replace(/changepond/ig,'india')}<br>`);
+        document.write(`${msg.replaceAll('changepond','india')} <br>`);
+        document.write(`${msg} <br>`);
+    </script>
+</body>
+</html>

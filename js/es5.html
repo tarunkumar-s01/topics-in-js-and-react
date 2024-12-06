@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <SCript>
+        let std=["tharun","rahul","sai","madhav","jai"];
+    //1.foreach() : it call another method once for each array element.
+
+    std.forEach((val,index)=>{
+    document.writeln(`${val},`);
+    });
+
+
+    document.writeln(` <br>`)
+
+
+    //2.
+
+    let num=[1,2,3,4,45,23,25,45,7,8,8,89];
+
+    document.writeln(`${num},`);
+
+    let mapout=num.map((val,index)=>{
+    return val*2;
+    });
+
+    document.writeln(`${mapout}<br>`);
+
+
+    //3.filter() : it call another method once for each array element and it return new array of those value who
+    // statisfy given condition.
+
+    let filterOut=num.filter((val,index)=>{
+    return val%2!=0;
+    });
+
+    document.writeln(`${filterout}<br>`);
+
+
+    //4.every(): it call another method once for each array element and it return true value if all array element
+    // satisfy given condition.
+
+    let everyOut=num.every((val,index)=>{
+    return val>0;
+    });
+
+    document.writeln(`${everyOut}<br>`);
+
+
+    //5.some():nother method once for each array element and it return true value if some array element satisfy given
+    // condition.
+
+    let someOut=num.some((val,index)=>{
+    return val>2;
+    });
+
+    document.writeln(`${someOut}<br>`);
+
+
+    //6.reduce/ReduceRight : it return array data as single value, it takes two parameter,preval,nextval
+
+    let add=num.reduce((prev,next)=>{
+    return prev+next;
+    });
+
+    document.writeln(`${add}<br>`);
+    </SCript>
+    
+</body>
+
+</html>

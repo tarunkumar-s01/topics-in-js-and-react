@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = prompt("enter your name ","tarunkumar");
+        let val = data.indexOf("@");
+        let sub= data.substr(val);
+       if(sub == '@yahho.com' || sub =='@gmail.com' || sub == '@changepond.com' || sub == '@hotmail.com'){
+        document.write('accepted');
+       }
+       else{
+        document.write('not accepted');
+       }
+
+
+
+        // let val = ['a','e','i','o','u','A','E','O','I','U'];
+        
+        // for (let s of val){
+        //     if (data % 2 == 0){
+        //         document.write('even');
+        //         break;
+        //     }
+        //     else{
+        //         document.write('The number',data,'odd');
+        //         break;
+        //     }
+        // }
+
+    </script>
+</body>
+</html>

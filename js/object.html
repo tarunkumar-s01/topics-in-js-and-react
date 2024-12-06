@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp = {
+            id : 101,
+            name : 'tarun',
+            single : 'true',
+            details : function(){
+                return `id:${this.id} name:${this.name} single:${this.single} <br>`
+            },
+            address : {
+                city : chennai,
+                pin : 60001,
+                state : 'tamilnadu'
+            }
+
+              
+        };
+        document.write("id:"+emp.id+"name:"+emp.name+"<br>");
+        document.write(`id:${emp.id} name:${emp.name} single:${emp.single} <br>`);
+        document.write(emp.details());
+    </script>
+</body>
+</html>

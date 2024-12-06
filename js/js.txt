@@ -1,0 +1,157 @@
+28/11/2024
+----------
+
+
+*JavaScript
+------------
+-it is use to add functionality into webapp
+-it is interpreted language.
+-it is loosely typed language.
+
+
+*why JS is loosely type language
+   -when we create a variable in js it cannot determined what type of data it contain until 
+   unless intialize in it.
+   -In js variable we can store multiple type of value in it.
+
+*How to use Js 
+   -there are two ways to use  it:
+     i)internal javascript:in html file we use script tag and in that we write js code.
+     ii)External javascript:in this we create a seperate js file and import that js file in 
+     html file by using script tag.
+
+*how to get output in JS:
+1.document.write():-it will display output in html page.
+                   -it will display the output in same line
+
+2.window.alert():-it will display output in model popup window.
+3.console.log():it will display output browser console or in terminal.
+4.innerhtml (dom) : display op inside an element
+======================================================================================================================
+
+29/11/2024  Day-2
+------------------
+
+hoisting - moving variable & func declaration at top of webpage
+
+*VAriable -  it can be  use to store data in it
+           - we can create variable in js by var,let,count
+
+        1.var - create function scope variable 
+             - we can use variable
+
+        use of var
+        var tarun - variable declare
+        tarun=25   - variable intialization
+        var tarun = 25  - doing both
+
+        2.let - it create block scope variable
+        - we cant not use variable use before its declaration
+        - we cant re declare variable
+
+        3.const - it create block scope variable
+              - we cant use variable before its declaration
+              - in this when we declare variable at same time we have to intialize it
+              - data will never change on run time
+
+datatype in js
+
+* let no1 = 123 , no2 = 0.5 , no3 = 567890' => number
+* let str1 =  "hello" , str2 = 'frined'; => string
+* let con1 = True , con2 = False =>  boolean
+* let con3 = null; => null
+* let city; => undine
+* let std = ["tarun","santo","nithi","sanjay"]; => array
+* let emp ={id:102,name:'tarun',post:'developer'} => it return power of any number
+
+exponentiation(**) => power of number
+
+== : equal to operator - return true value when condition is True value
+=== : exactly equal to - check value and data type if both are same return true value
+
+* function : use to perform specific task or particular operand
+        - execute only when we call it
+        - 2 type - pe-define (or) in-built func - provide js to us 
+                 - user-define func - user develop for particular use
+syntac :
+       function functionname(){
+        code
+       }
+       functionname();
+
+annonymous func - it has no functionname
+arrow func - it has no func and no functionname
+optional parameter func - function whic parmeter wil be optional
+rest parameter func - we dont know how many parameter required so we use ...
+
+how to change attribute value by using dom
+ow to call function bu using event
+how to acces data from ip control
+
+array - use to store mul value with same data type
+      - in array data store on index basis
+      - array index always st from zero index
+      - access array value outside by writing arrayname
+    
+    push - use to insert value at last index
+    pop - remove from the last index
+    unshift - use to insert value at st index of array
+    shift - remove from st index of array
+    splice(startindex,deletecount,valuestoadd) - use to insert and remove values from middle index of array
+    tostring() - use to convert array data into string
+    join(separator) - it is use to convert array data into string  it take one parameter to separate values
+
+object - use to store mul values with diff data type
+       - obj data store in key & value pair 
+       - can access onject data outside of by writing object.keyname
+       - object type of data in denoted by {}.
+
+
+
+
+
+
+____________________________________________________________________________________________________________________________________________
+
+day 5
+
+string and its method
+
+string it collection of chr
+in str every chr has index value and st from zero
+in str blank space is also consider as str
+
+there r 3 method
+- indexof(searchingstring,startindex): => will search str from left to right and return index of first occirences of str
+                                       =>  it serach str is not found then return -1 as result
+-lastindexof(searchingstring,startindex) -  will search str from right to left and return index of first occirences of str
+                                        - it serach str is not found then return -1 as result
+
+-search(searchingstring) - will search str from left to right and return index of first occirences of str
+                          - it serach str is not found then return -1 as result
+                          - it is faster than indexof method
+                        - 3 type of searching str
+
+                        1.slice(startindex,endindex?):
+                            - will return part of str from big str
+                            - we write +ve index will search from left to right
+                            - we write -ve index will search from right to left
+
+                        2.substring(startindex,endindex?):
+                            - will return part of str from big str
+                            - we write +ve index will search from left to right
+
+                        3.substr(startindex,totalnumberofcharacter):
+                            - will return part of str from big str
+                            - we write +ve index will search index from left to right
+
+charAt(index) - it return character from index no.
+charcodeAt() - it return ascii code.
+replace() - it replace specfic string.
+i -  used for remove case sensitive
+g - global 
+ig can be used in replace method
+split(separator) - use to convert str data into array.
+
+                            
+
